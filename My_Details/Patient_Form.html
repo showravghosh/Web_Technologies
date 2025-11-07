@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Patient Information Form
+        </title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="My_Details.html">Details.</a>
+                <a href="My_Interest.html">Interests.</a>
+                <a href="My_Contact.html">Contact.</a>
+                <a href="My_Projects.html">Projects.</a>
+                <a href="My_Friends_Table.html">Friends Table.</a>
+            </nav>
+        </header>
+
+         <h2 style="text-align:center;">Patient Information Form</h2>
+
+        <form action="" method="POST" enctype="multipart/form-data">
+            <br><fieldset style="width: 50%; margin: auto;">
+            <br><legend> Patient Details</legend>
+
+            <label for="userName">Patient Name:</label><br>
+            <input type="text" id="pName" name="pName" placeholder="Write Patient Full Name" required><br><br>
+
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age" placeholder="Enter age" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter email"><br><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="Male"> Male
+            <input type="radio" id="female" name="gender" value="Female"> Female
+            <input type="radio" id="other" name="gender" value="Other"> Other<br><br>
+
+            <label for="disease">Symptoms / Problem:</label><br>
+            <textarea id="disease" name="disease" placeholder="Describe symptoms"></textarea><br><br>
+
+            <label for="doctor">Preferred Doctor:</label><br>
+            <select id="doctor" name="doctor">
+                <option value="">Select Doctor</option>
+                <option value="Dr. Rahman">Dr. Rahman</option>
+                <option value="Dr. Sultana">Dr. Sultana</option>
+                <option value="Dr. Ahmed">Dr. Ahmed</option>
+            </select><br><br>
+
+            <label for="profilePic">Upload Profile Picture:</label><br>
+            <input type="file" id="profilePic" name="profilePic"><br><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
+
+    
+
+    <br><form action="" method="post">
+        <fieldset style="width: 50%; margin: auto;">
+            <legend><b>Payment Details</b></legend>
+
+            <label>Payment Method:</label><br>
+            <input type="radio" id="bkash" name="paymentType" value="Bkash"> Bkash
+            <input type="radio" id="rocket" name="paymentType" value="Rocket"> Rocket
+            <input type="radio" id="nagad" name="paymentType" value="Nagad"> Nagad
+            <input type="radio" id="card" name="paymentType" value="Card"> Card<br><br>
+
+            <label for="trxId">Transaction ID:</label><br>
+            <input type="text" id="trxId" name="trxId" placeholder="Enter Transaction ID"><br><br>
+
+            <input type="submit" value="Confirm Payment">
+        </fieldset>
+    </form>
+    </body>
+</html>
